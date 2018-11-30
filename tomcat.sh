@@ -18,3 +18,4 @@ sudo sed -i "s~$From~$Path~" /usr/lib/systemd/system/tomcat.service
 sudo sed -i "s~$From~$Path~" /etc/systemd/system/multi-user.target.wants/tomcat.service
 sudo systemctl daemon-reload
 sudo systemctl restart tomcat.service
+sudo systemctl status tomcat.service
